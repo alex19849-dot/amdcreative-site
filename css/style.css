@@ -370,4 +370,18 @@ body {
         gap: 15px;
     }
 }
+/* ========== FOOTER ========== */
+
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--teal);
+    color: var(--white);
+    margin-top: 60px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
 
