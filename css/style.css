@@ -181,4 +181,32 @@ body {
     font-size: 1.1rem;
     color: var(--teal);
 }
+/* ========== ABOUT SECTION ========== */
+
+.about-section {
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    padding: 20px 40px;
+}
+
+.about-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.about-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--teal);
+}
+
+.about-card p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
 
