@@ -268,4 +268,53 @@ body {
 .contact-form button:hover {
     background: var(--teal);
 }
+/* ========== MOBILE FIXES ========== */
+
+@media (max-width: 600px) {
+
+    /* Prevent sideways scroll */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Navbar layout */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    /* Hero tweaks so it's not massive on mobile */
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
 
