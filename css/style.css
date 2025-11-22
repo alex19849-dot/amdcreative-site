@@ -287,6 +287,31 @@ body {
     background-position: right 14px center;
     background-size: 18px;
 }
+/* Contact Form Button – FIXED */
+.contact-form button {
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    background: var(--teal);
+    color: white;
+    border: none;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.15s ease;
+}
+
+/* Hover animation */
+.contact-form button:hover {
+    background: var(--gold);
+    transform: translateY(-2px);
+}
+
+/* Pressed click */
+.contact-form button:active {
+    transform: translateY(0px);
+}
 
 /* ========== MOBILE FIXES ========== */
 
