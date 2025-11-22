@@ -181,6 +181,24 @@ body {
     font-size: 1.1rem;
     color: var(--teal);
 }
+.portfolio-item a {
+    text-decoration: none;
+    display: block;
+}
+
+.portfolio-desc {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+.portfolio-img:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
 /* ========== ABOUT SECTION ========== */
 
 .about-section {
