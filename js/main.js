@@ -1,4 +1,3 @@
-<script src="js/main.js">
 document.addEventListener("DOMContentLoaded", () => {
 
     const images = document.querySelectorAll('.portfolio-img');
@@ -8,11 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     images.forEach(img => {
         img.addEventListener('click', () => {
-
-            // Extract URL from background-image: url("img/file.png")
             const bg = img.style.backgroundImage;
-            const url = bg.slice(5, -2); // handles .png and .png.png
-
+            const url = bg.slice(5, -2);
             lightboxImg.src = url;
             lightbox.style.display = 'flex';
         });
@@ -28,5 +24,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
-</script>
