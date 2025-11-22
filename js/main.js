@@ -53,6 +53,33 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = (currentIndex + 1) % images.length;
         openLightbox(currentIndex);
     });
+// Contact form success popup
+if (document.querySelector('.contact-form')) {
+
+    const form = document.querySelector('.contact-form');
+    const popup = document.getElementById('successPopup');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = Object.fromEntries(new FormData(form).entries());
+
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+
+        if (res.ok) {
+            popup.classList.add('show');
+            form.reset();
+
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 3500);
+        }
+    });
+}
 
     // Mobile swipe
     let startX = 0;
