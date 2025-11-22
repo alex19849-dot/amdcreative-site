@@ -1,4 +1,4 @@
-<script src="js/main.js"></script>
+<script src="js/main.js">
 // Lightbox Functionality
 document.querySelectorAll('.portfolio-img').forEach(img => {
     img.addEventListener('click', () => {
@@ -22,4 +22,4 @@ document.getElementById('lightbox').addEventListener('click', (e) => {
         document.getElementById('lightbox').style.display = 'none';
     }
 });
-
+</script>
