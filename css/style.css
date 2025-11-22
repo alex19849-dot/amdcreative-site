@@ -285,7 +285,8 @@ body {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='4,7 10,13 16,7' fill='none' stroke='%230A7373' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 14px center;
-    backgrou
+    background-size: 18px;
+}
 
 /* ========== MOBILE FIXES ========== */
 
