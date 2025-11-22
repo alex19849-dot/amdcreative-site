@@ -236,11 +236,24 @@ body {
 }
 
 .contact-card {
-    background: var(--white);
+    background: white;
     padding: 40px 30px;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid var(--border-soft);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.contact-card h2 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--teal);
 }
 
 .contact-form {
@@ -249,43 +262,31 @@ body {
     gap: 20px;
 }
 
+/* Text inputs and textarea */
+
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-select {
     width: 100%;
     padding: 14px;
-    border: 1px solid var(--border-soft);
-    border-radius: 6px;
+    border: 2px solid var(--border-soft);
+    border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
-    outline: none;
-    transition: border 0.2s;
-    background: var(--duck-egg);
+    background: white;
+    transition: 0.2s ease;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: var(--teal);
-}
+/* Dropdown styling */
 
-.contact-form textarea {
-    height: 140px;
-    resize: vertical;
-}
-
-.contact-form button {
-    background: var(--gold);
-    color: var(--white);
-    border: none;
-    padding: 14px;
-    font-size: 1.1rem;
-    border-radius: 6px;
+.contact-select {
     cursor: pointer;
-    transition: 0.2s;
-}
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='4,7 10,13 16,7' fill='none' stroke='%230A7373' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    backgrou
 
-.contact-form button:hover {
-    background: var(--teal);
-}
 /* ========== MOBILE FIXES ========== */
 
 @media (max-width: 600px) {
