@@ -454,7 +454,9 @@ body {
     padding: 0 20px;
     max-width: 90%;
 }
-
+.lightbox-caption {
+    text-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
 /* Arrows */
 .lightbox-arrow {
     position: absolute;
