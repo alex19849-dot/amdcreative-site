@@ -541,4 +541,45 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+/* COOKIE BANNER */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--teal);
+    color: white;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: 0.3s ease;
+}
+
+.cookie-banner.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cookie-banner button {
+    background: var(--gold);
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cookie-banner button:hover {
+    background: white;
+    color: var(--teal);
+}
 
