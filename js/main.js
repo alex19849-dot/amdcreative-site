@@ -142,3 +142,24 @@ function initScrollReveal() {
 
     revealItems.forEach(item => observer.observe(item));
 }
+/* ========== COOKIE BANNER ========== */
+
+function initCookieBanner() {
+    const banner = document.getElementById('cookie-banner');
+    const btn = document.getElementById('cookie-accept');
+
+    if (!banner || !btn) return;
+
+    // Already accepted?
+    if (localStorage.getItem('cookieAccepted') === 'yes') return;
+
+    // Show banner
+    banner.classList.add('show');
+
+    btn.addEventListener('click', () => {
+        localStorage.setItem('cookieAccepted', 'yes');
+        banner.classList.remove('show');
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initCookieBanner);
