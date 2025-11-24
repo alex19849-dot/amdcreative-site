@@ -529,4 +529,16 @@ body {
 .lightbox-arrow:hover {
     color: var(--gold);
 }
+/* ========== SCROLL ANIMATION ========== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
